@@ -11,4 +11,9 @@ max_dim = 0 #this will change
 current_dim = 0
 for line in matrix:
 	for element in line:
-		if(element == 1):
+		while(element == 1):
+			current_dim+=1
+		check_square(current_dim)
+
+def check_square(num):
+	#given a number, verify that 
